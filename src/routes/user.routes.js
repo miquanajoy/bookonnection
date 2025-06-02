@@ -3,7 +3,7 @@ const SECRET_KEY = process.env.JWT_SECRET || 'supersecretkey';
 
 const express = require('express');
 const router = express.Router();
-const userController = require('../controllers/user.controller');
+const userController = require('../controllers/user/user.controller');
 
 router.post('/register', userController.register);
 router.post('/login', userController.login);
